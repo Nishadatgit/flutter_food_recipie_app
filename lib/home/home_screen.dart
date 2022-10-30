@@ -21,12 +21,11 @@ class HomeScreen extends StatelessWidget {
         children: [
           Expanded(
             child: ListView.builder(
-              itemBuilder: (ctx, index) => RecipieCardShimmerWidget(),
-              //  RecipieCardWidget(
-              //   image: image,
-              //   text:
-              //       "What to make for dinner tonight?? Bruschetta Style Pork & Pasta",
-              // ),
+              itemBuilder: (ctx, index) => RecipieCardWidget(
+                image: image,
+                text:
+                    "What to make for dinner tonight?? Bruschetta Style Pork & Pasta",
+              ),
               itemCount: 10,
             ),
           )
